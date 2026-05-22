@@ -1,0 +1,657 @@
+Package Report
+
+-----------------------------------------------------------------------------
+Document:
+Name: Portfolio 2026 - Annisa Raihan Djatmiko.pdf
+Color Mode: RGB color
+Color Profile: none
+Ruler Units: pixels
+Artboard Dimensions: 1920 px x 1080 px
+Show Images in Outline Mode: OFF
+Highlight Substituted Fonts: OFF
+Highlight Substituted Glyphs: OFF
+Preserve Text Editability
+Simulate Colored Paper: OFF
+
+-----------------------------------------------------------------------------
+Spot Color Objects:
+PANTONE 116 C (RGB)
+PANTONE 200 C (Lab)
+red match (CMYK)
+
+-----------------------------------------------------------------------------
+Missing Fonts:NONE
+
+-----------------------------------------------------------------------------
+Protected Fonts that were not packaged:NONE
+
+-----------------------------------------------------------------------------
+Fonts:
+Balivia Free Bold (OTF)
+Bootzy TM (OTF)
+CHEDROS Regular (OTF)
+Neue Haas Grotesk Display Pro 55 Roman (OTF)
+Neue Haas Grotesk Text Pro 55 Roman (OTF)
+Neue Haas Grotesk Text Pro 75 Bold (OTF)
+Helvetica Neue Bold (TrueType)
+Myriad Pro (OTF)
+
+-----------------------------------------------------------------------------
+Embedded Fonts:
+BootzyTM
+Etna Regular
+Helvetica
+BebasNeue Regular
+Helvetica
+Etna Regular
+BebasNeue Regular
+Jawbreak Sans
+
+-----------------------------------------------------------------------------
+Missing Links:
+NONE
+
+-----------------------------------------------------------------------------
+Linked Images:
+
+/Volumes/Transcend/SAS/SAS 2/Key Visual All Brand/Fireball/2026/02-FEBRUARY/FA-FIREBALL-WOBBLER MOCKUP-20FEB26/Fireball - Wobbler Mockup.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 73242K, 5000 by 3750 pixels
+Dimensions: 1940,626 by 1455,47 points 
+Resolution: 185,507 by 185,507 pixels per inch
+
+
+/Volumes/Transcend/SAS/SAS 2/Key Visual All Brand/Buffalo Trace/PDF/KV_COCKTAIL SERIES_Old Fashioned-Alt5.pdf
+Type: PDF
+
+/Volumes/Transcend/SAS/SAS 2/Key Visual All Brand/Buffalo Trace/PDF/KV_COCKTAIL SERIES_Old Fashioned-Alt4.pdf
+Type: PDF
+
+/Volumes/Transcend/SAS/SAS 2/Key Visual All Brand/Buffalo Trace/2025/01-JANUARY/FA-BUFFALO TRACE-WHISKY SOUR-7JAN25/BT - New.psd
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 12700K, 1748 by 2480 pixels
+Dimensions: 419,52 by 595,2 points 
+Resolution: 300 by 300 pixels per inch
+
+
+/Volumes/Transcend/SAS/SAS 2/Key Visual All Brand/Buffalo Trace/2025/11-NOVEMBER/FA-BUFFALO TRACE-MANTRA-12NOV25/FA_Buffalo Trace_Mantra - A5.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 16933K, 1748 by 2480 pixels
+Dimensions: 419,52 by 595,2 points 
+Resolution: 300 by 300 pixels per inch
+
+
+/Volumes/Transcend/SAS/SAS 2/Key Visual All Brand/Fireball/2025/12-DECEMBER/FA-FIREBALL-IGF-5DEC25/FA_Content Fireball 2 - 5Des25.png
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 4271K, 1080 by 1350 pixels
+Dimensions: 388,22 by 485,276 points 
+Resolution: 200,299 by 200,299 pixels per inch
+
+
+/Volumes/Transcend/SAS/SAS 2/Key Visual All Brand/Fireball/2025/12-DECEMBER/FA-FIREBALL-IGF-5DEC25/FA_Content Fireball 1 - 5Des25.png
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 4271K, 1080 by 1350 pixels
+Dimensions: 388,22 by 485,276 points 
+Resolution: 200,299 by 200,299 pixels per inch
+
+
+/Volumes/Transcend/SAS/SAS 2/Key Visual All Brand/Fireball/2026/01-JANUARY/FA-FIREBALL-IGF-23JAN26/IGF_Fireball Content - 23Jan26.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 5695K, 1080 by 1350 pixels
+Dimensions: 387,57 by 484,462 points 
+Resolution: 200,635 by 200,635 pixels per inch
+
+
+/Volumes/Transcend/SAS/SAS 2/Key Visual All Brand/Fireball/2026/01-JANUARY/FA-FIREBALL-IGF-30JAN26/IGF-FIREBALL CONTENT-30JAN26.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 5695K, 1080 by 1350 pixels
+Dimensions: 387,784 by 484,73 points 
+Resolution: 200,524 by 200,524 pixels per inch
+
+
+/Volumes/Transcend/SAS/SAS 2/Key Visual All Brand/Fireball/2026/04-APRIL/FA-FIREBALL-JADE BALI-24APR26/FA-FIREBALL-JADE BALI-24APR26.pdf
+Type: PDF
+
+/Volumes/Transcend/SAS/SAS 2/Key Visual All Brand/Fireball/2026/04-APRIL/FA-FIREBALL-TIPSY BABY-9APR26/300ppi/FA_Fireball-Menu Insertion@300x.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 8478K, 1241 by 1749 pixels
+Dimensions: 343,94 by 484,73 points 
+Resolution: 259,79 by 259,79 pixels per inch
+
+
+/Volumes/Transcend/SAS/SAS 2/Key Visual All Brand/Fireball/2026/04-APRIL/FA-FIREBALL-TIPSY BABY-9APR26/300ppi/FA_Fireball_Fox & Rabbit - A5.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 8485K, 1242 by 1749 pixels
+Dimensions: 344,217 by 484,73 points 
+Resolution: 259,79 by 259,79 pixels per inch
+
+
+/Users/sasimporter01/Downloads/Happy Birthday @iwaktherockfish ! Sebutin karyanya yang paling kamu suka di kolom komentar kami,.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 3417K, 1080 by 1080 pixels
+Dimensions: 369,042 by 369,042 points 
+Resolution: 210,707 by 210,707 pixels per inch
+
+
+/Users/sasimporter01/Downloads/2025 makin dekat! Band apa yang paling lo harap bisa comeback tahun depan Siapa tahu harapan kit.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 3417K, 1080 by 1080 pixels
+Dimensions: 369,042 by 369,042 points 
+Resolution: 210,707 by 210,707 pixels per inch
+
+
+/Users/sasimporter01/Downloads/Selamat Hari Kesaktian Pancasila, semoga semangat persatuan terus menyala di hati kita semua. .jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 3417K, 1080 by 1080 pixels
+Dimensions: 369,042 by 369,042 points 
+Resolution: 210,707 by 210,707 pixels per inch
+
+
+/Users/sasimporter01/Downloads/Bulan Oktober kemarin, kancah music Indonesia dipenuhi talenta yang cukup mengejutkan. Sebab, be.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 3417K, 1080 by 1080 pixels
+Dimensions: 369,042 by 369,042 points 
+Resolution: 210,707 by 210,707 pixels per inch
+
+
+/Users/sasimporter01/Downloads/Selamat Memperingati Hari Sumpah Pemuda, friend! Tetap jaga spirit pemuda Indonesia dalam mengem.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 3417K, 1080 by 1080 pixels
+Dimensions: 369,042 by 369,042 points 
+Resolution: 210,707 by 210,707 pixels per inch
+
+
+/Users/sasimporter01/Downloads/Duo elektronik asal Jakarta, White Chorus, melepas video klip dari lagunya yang berjudul Amarah.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 3417K, 1080 by 1080 pixels
+Dimensions: 369,042 by 369,042 points 
+Resolution: 210,707 by 210,707 pixels per inch
+
+
+/Users/sasimporter01/Downloads/Happy Birthday @iwaktherockfish ! Sebutin karyanya yang paling kamu suka di kolom komentar kami,.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 3417K, 1080 by 1080 pixels
+Dimensions: 369,042 by 369,042 points 
+Resolution: 210,707 by 210,707 pixels per inch
+
+
+/Users/sasimporter01/Downloads/2025 makin dekat! Band apa yang paling lo harap bisa comeback tahun depan Siapa tahu harapan kit.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 3417K, 1080 by 1080 pixels
+Dimensions: 369,042 by 369,042 points 
+Resolution: 210,707 by 210,707 pixels per inch
+
+
+/Users/sasimporter01/Downloads/Selamat Hari Kesaktian Pancasila, semoga semangat persatuan terus menyala di hati kita semua. .jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 3417K, 1080 by 1080 pixels
+Dimensions: 369,042 by 369,042 points 
+Resolution: 210,707 by 210,707 pixels per inch
+
+
+/Users/sasimporter01/Downloads/Selamat Memperingati Hari Lahir Pancasila, friend! Sebutin anthem yang cocok diputar untuk meray.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 3417K, 1080 by 1080 pixels
+Dimensions: 369,042 by 369,042 points 
+Resolution: 210,707 by 210,707 pixels per inch
+
+
+/Users/sasimporter01/Downloads/Selamat Hari Peringatan Konferensi Asia-Afrika (KAA), friend!-#richmusiconline#MusicWithoutBorde.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 3417K, 1080 by 1080 pixels
+Dimensions: 369,042 by 369,042 points 
+Resolution: 210,707 by 210,707 pixels per inch
+
+
+/Users/sasimporter01/Downloads/Makin hari makin banyak guyonan (yang makin hari makin menyebalkan) tentang ‚skena‘, seolah ‚ske.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 3417K, 1080 by 1080 pixels
+Dimensions: 369,042 by 369,042 points 
+Resolution: 210,707 by 210,707 pixels per inch
+
+
+/Users/sasimporter01/Downloads/Musisi Malang, selalu beregenerasi di tiap zamannya. Dimulai dari kemunculan Abadi Soesman, Ian .jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 2929K, 1000 by 1000 pixels
+Dimensions: 369,042 by 369,042 points 
+Resolution: 195,099 by 195,099 pixels per inch
+
+
+/Users/sasimporter01/Downloads/Bulan Oktober kemarin, kancah music Indonesia dipenuhi talenta yang cukup mengejutkan. Sebab, be.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 3417K, 1080 by 1080 pixels
+Dimensions: 369,042 by 369,042 points 
+Resolution: 210,707 by 210,707 pixels per inch
+
+
+/Users/sasimporter01/Downloads/Selamat Memperingati Hari Sumpah Pemuda, friend! Tetap jaga spirit pemuda Indonesia dalam mengem.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 3417K, 1080 by 1080 pixels
+Dimensions: 369,042 by 369,042 points 
+Resolution: 210,707 by 210,707 pixels per inch
+
+
+/Users/sasimporter01/Downloads/E-FLYER BANDUNG FULL FEED.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 4556K, 1080 by 1080 pixels
+Dimensions: 518,764 by 518,764 points 
+Resolution: 149,895 by 149,895 pixels per inch
+
+
+/Users/sasimporter01/Downloads/E-FLYER BANDUNG FULL STORY.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 8100K, 1080 by 1920 pixels
+Dimensions: 291,778 by 518,716 points 
+Resolution: 266,504 by 266,504 pixels per inch
+
+
+/Users/sasimporter01/Downloads/E-Flyer Medan Full Story.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 8100K, 1080 by 1920 pixels
+Dimensions: 291,778 by 518,716 points 
+Resolution: 266,504 by 266,504 pixels per inch
+
+
+/Users/sasimporter01/Downloads/Feed_Full Line Up.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 15625K, 2000 by 2000 pixels
+Dimensions: 518,572 by 518,572 points 
+Resolution: 277,686 by 277,686 pixels per inch
+
+
+/Users/sasimporter01/Downloads/E-FLYER UTAMA JAKARTA FEED.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 4556K, 1080 by 1080 pixels
+Dimensions: 518,764 by 518,764 points 
+Resolution: 149,895 by 149,895 pixels per inch
+
+
+/Users/sasimporter01/Downloads/Feed_E-Flyer Full Line Up Updated Font.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 15625K, 2000 by 2000 pixels
+Dimensions: 518,764 by 518,764 points 
+Resolution: 277,583 by 277,583 pixels per inch
+
+
+/Users/sasimporter01/Downloads/Feed_E-Flyer Ticket Prices Update.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 15625K, 2000 by 2000 pixels
+Dimensions: 518,764 by 518,764 points 
+Resolution: 277,583 by 277,583 pixels per inch
+
+
+/Users/sasimporter01/Downloads/LANYARD MOCKUP RICH.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 15625K, 2500 by 1600 pixels
+Dimensions: 1202,693 by 769,723 points 
+Resolution: 149,664 by 149,664 pixels per inch
+
+
+/Users/sasimporter01/Downloads/Lanyard_Mockup_1.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 15625K, 2500 by 1600 pixels
+Dimensions: 1202,693 by 769,723 points 
+Resolution: 149,664 by 149,664 pixels per inch
+
+
+/Users/sasimporter01/Downloads/Lanyard Mockup CTM.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 15625K, 2500 by 1600 pixels
+Dimensions: 1202,693 by 769,723 points 
+Resolution: 149,664 by 149,664 pixels per inch
+
+
+/Users/sasimporter01/Downloads/LANYARD OUTSOURCE MOCKUP.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 15625K, 2500 by 1600 pixels
+Dimensions: 1202,693 by 769,723 points 
+Resolution: 149,664 by 149,664 pixels per inch
+
+
+/Users/sasimporter01/Downloads/Mockup Lanyard Karockday.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 15625K, 2500 by 1600 pixels
+Dimensions: 1202,693 by 769,723 points 
+Resolution: 149,664 by 149,664 pixels per inch
+
+
+/Users/sasimporter01/Downloads/DISTORSIKERAS24-RNDR-03911.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 123566K, 7952 by 5304 pixels
+Dimensions: 948,91 by 632,925 points 
+Resolution: 603,37 by 603,37 pixels per inch
+
+
+/Users/sasimporter01/Downloads/DISTORSIKERAS24-RNDR-03987.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 123566K, 7952 by 5304 pixels
+Dimensions: 971,09 by 647,719 points 
+Resolution: 589,589 by 589,589 pixels per inch
+
+
+/Users/sasimporter01/Downloads/DISTORSIKERAS24-DHIT-00714.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 31253K, 4000 by 2667 pixels
+Dimensions: 1920 by 1280,16 points 
+Resolution: 150 by 150 pixels per inch
+
+
+/Volumes/Transcend/Unnamed Files/Portfolio 2026 - Annisa Raihan Djatmiko_Folder/Links/DistorsiKERAS (black).png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 2325K, 1952 by 305 pixels
+Dimensions: 322,737 by 50,428 points 
+Resolution: 435,475 by 435,475 pixels per inch
+
+
+/Volumes/Transcend/Unnamed Files/Portfolio 2026 - Annisa Raihan Djatmiko_Folder/Links/Rich Music (B) (1).png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 4808K, 1751 by 703 pixels
+Dimensions: 289,032 by 116,042 points 
+Resolution: 436,187 by 436,188 pixels per inch
+
+
+/Volumes/Transcend/Unnamed Files/Portfolio 2026 - Annisa Raihan Djatmiko_Folder/Links/Mockup-Rich.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 8100K, 1920 by 1080 pixels
+Dimensions: 1920 by 1080 points 
+Resolution: 72 by 72 pixels per inch
+
+
+/Volumes/Transcend/Unnamed Files/Portfolio 2026 - Annisa Raihan Djatmiko_Folder/Links/Mockup-Porto-Sazerac.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 8100K, 1920 by 1080 pixels
+Dimensions: 1917,428 by 1078,553 points 
+Resolution: 72,097 by 72,097 pixels per inch
+
+
+/Users/sasimporter01/Downloads/FILE JPG.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 56953K, 5400 by 3600 pixels
+Dimensions: 882,579 by 588,386 points 
+Resolution: 440,527 by 440,527 pixels per inch
+
+
+/Users/sasimporter01/Downloads/Untitled_Artwork-2.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 9216K, 2048 by 1536 pixels
+Dimensions: 555,139 by 416,354 points 
+Resolution: 265,62 by 265,62 pixels per inch
+
+
+/Users/sasimporter01/Downloads/Untitled_Artwork 4.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 9216K, 2048 by 1536 pixels
+Dimensions: 476,687 by 357,516 points 
+Resolution: 309,335 by 309,335 pixels per inch
+
+
+/Users/sasimporter01/Downloads/BG 4.JPG
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 25487K, 3508 by 2480 pixels
+Dimensions: 1063,73 by 752,01 points 
+Resolution: 237,444 by 237,444 pixels per inch
+
+
+/Volumes/Transcend/Unnamed Files/Portfolio 2026 - Annisa Raihan Djatmiko_Folder/Links/Mockup-Porto-Makmur.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 8100K, 1920 by 1080 pixels
+Dimensions: 1920 by 1080 points 
+Resolution: 72 by 72 pixels per inch
+
+
+/Users/sasimporter01/Downloads/R&W Yokocho Branding.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 1757627K, 32422 by 13878 pixels
+Dimensions: 1316,02 by 563,313 points 
+Resolution: 1773,821 by 1773,821 pixels per inch
+
+
+/Users/sasimporter01/Downloads/WhatsApp Image 2026-05-06 at 15.34.13.jpeg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 38025K, 4160 by 3120 pixels
+Dimensions: 1920 by 1440 points 
+Resolution: 156 by 156 pixels per inch
+
+
+/Users/sasimporter01/Downloads/adobe-express-qr-code.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 976K, 500 by 500 pixels
+Dimensions: 682,946 by 682,946 points 
+Resolution: 52,713 by 52,713 pixels per inch
+
+
+/Volumes/Transcend/Unnamed Files/Portfolio 2026 - Annisa Raihan Djatmiko_Folder/Links/Mockup-Porto-Makmur2.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 8100K, 1920 by 1080 pixels
+Dimensions: 1920 by 1080 points 
+Resolution: 72 by 72 pixels per inch
+
+
+/Volumes/Transcend/Unnamed Files/Portfolio 2026 - Annisa Raihan Djatmiko_Folder/Links/Boardgame-KAH.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 8100K, 1920 by 1080 pixels
+Dimensions: 2202,27 by 1238,777 points 
+Resolution: 62,772 by 62,772 pixels per inch
+
+
+/Volumes/Transcend/Unnamed Files/Portfolio 2026 - Annisa Raihan Djatmiko_Folder/Links/Boardgame-KAH2.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 8100K, 1920 by 1080 pixels
+Dimensions: 1789,801 by 1006,763 points 
+Resolution: 77,238 by 77,238 pixels per inch
+
+
+/Users/sasimporter01/Downloads/bd05a937-9aa5-4908-8d23-83e3c22a2a34.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 5625K, 1200 by 1600 pixels
+Dimensions: 1200 by 1600 points 
+Resolution: 72 by 72 pixels per inch
+
+
+/Volumes/Transcend/Unnamed Files/Portfolio 2026 - Annisa Raihan Djatmiko_Folder/Links/Mockup-Porto-Amber2.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 8100K, 1920 by 1080 pixels
+Dimensions: 1920 by 1080 points 
+Resolution: 72 by 72 pixels per inch
+
+
+/Volumes/Transcend/Unnamed Files/Portfolio 2026 - Annisa Raihan Djatmiko_Folder/Links/Mockup-Porto-Amber.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 8100K, 1920 by 1080 pixels
+Dimensions: 1920 by 1080 points 
+Resolution: 72 by 72 pixels per inch
+
+
+/Volumes/Transcend/Unnamed Files/Portfolio 2026 - Annisa Raihan Djatmiko_Folder/11668644.png
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 53760K, 5120 by 3584 pixels
+Dimensions: 1920 by 1344 points 
+Resolution: 192 by 192 pixels per inch
+
+
+/Volumes/Transcend/Unnamed Files/Portfolio 2026 - Annisa Raihan Djatmiko_Folder/9869793.png
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 48339K, 5500 by 3000 pixels
+Dimensions: 2044,721 by 1115,303 points 
+Resolution: 193,669 by 193,669 pixels per inch
+
+
+/Users/sasimporter01/Desktop/Mockup-Porto-1.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 8100K, 1920 by 1080 pixels
+Dimensions: 1920,347 by 1080,195 points 
+Resolution: 71,987 by 71,987 pixels per inch
+
+
+/Users/sasimporter01/Desktop/Mockup-Porto-2.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 8100K, 1920 by 1080 pixels
+Dimensions: 1920 by 1080 points 
+Resolution: 72 by 72 pixels per inch
+
+
+/Volumes/Transcend/Unnamed Files/Smokedhouse/Mockup 1.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 41671K, 4000 by 2667 pixels
+Dimensions: 1925,843 by 1284,056 points 
+Resolution: 149,545 by 149,545 pixels per inch
+
+
+/Volumes/Transcend/Unnamed Files/Smokedhouse/Apron mockup.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 78182K, 5479 by 3653 pixels
+Dimensions: 1920 by 1280,117 points 
+Resolution: 205,462 by 205,462 pixels per inch
+
+
+/Volumes/Transcend/Unnamed Files/Portfolio 2026 - Annisa Raihan Djatmiko_Folder/Links/BG BBQ.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 60862K, 4800 by 3246 pixels
+Dimensions: 1919 by 1297,724 points 
+Resolution: 180,094 by 180,094 pixels per inch
+
+
+/Volumes/Transcend/Unnamed Files/Portfolio 2026 - Annisa Raihan Djatmiko_Folder/Links/DistorsiKERAS (black).png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 2325K, 1952 by 305 pixels
+Dimensions: 322,737 by 50,428 points 
+Resolution: 435,475 by 435,475 pixels per inch
+
+
+/Volumes/Transcend/Unnamed Files/Portfolio 2026 - Annisa Raihan Djatmiko_Folder/Links/Rich Music (B) (1).png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 4808K, 1751 by 703 pixels
+Dimensions: 208,669 by 83,777 points 
+Resolution: 604,172 by 604,172 pixels per inch
