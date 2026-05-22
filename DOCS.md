@@ -16,32 +16,69 @@ A reference guide for anyone tinkering with this project.
 | `clients/` | One HTML file per client (7 total) |
 | `works/` | One HTML file per project (10 total) |
 | `assets/css/style.css` | ALL shared styles — edit here, applies everywhere |
-| `assets/js/main.js` | ALL shared JS — cursor, scroll reveal, nav |
-| `assets/images/` | Web-ready images (copied + renamed from `_source-assets/`) |
-| `assets/images/profile.jpg` | ECA's selfie photo (used in About section) |
-| `assets/images/clients/` | Client logo files |
-| `assets/images/works/` | Work/project images |
+| `assets/js/main.js` | ALL shared JS — cursor, scroll reveal, nav, lightbox |
+| `assets/favicon.svg` | Site icon — acid green blob, transparent bg |
+| `assets/images/profile.webp` | ECA's photo (used in About section) |
+| `assets/images/clients/` | Client logo files (WebP) |
+| `assets/images/products/` | Product/brand images (WebP) |
+| `assets/images/works/` | Full-res work images (originals) |
+| `assets/images/works/thumbs/` | WebP thumbnails — used in `<img src>` on all pages |
 | `_archive/` | Original PDF portfolio + report — DO NOT EDIT |
-| `_ref/` | PDF screenshots for visual reference — DO NOT USE in web |
-| `_fonts/` | Font files (not currently loaded — Space Grotesk from Google Fonts) |
+| `_ref/` | PDF screenshots — `portfolio_page-22.jpg` used as fireball hero |
+| `_fonts/` | Local font files (NHaasGroteskTX + DS, Chedros, Balivia, etc.) |
 | `_source-assets/` | Original unedited client asset files |
 
 ---
 
 ## Design Tokens
 
-All colors and the font are set in `assets/css/style.css` under `:root`:
+All tokens in `assets/css/style.css` under `:root`:
 
 ```css
---dark:  #1c1c1c   /* main dark background */
---dark2: #141414   /* slightly darker (hero, dividers) */
---light: #f4f4f0   /* off-white (about, CV sections) */
---white: #ffffff   /* pure white */
---acid:  #ccff00   /* lime green accent */
---acid2: #b8e800   /* darker lime (button hover) */
+--dark:      #1c1c1c   /* main dark background */
+--dark2:     #141414   /* slightly darker (hero, dividers) */
+--light:     #f4f4f0   /* off-white (about, CV sections) */
+--white:     #ffffff
+--acid:      #ccff00   /* lime green accent */
+--acid2:     #b8e800   /* lime hover */
+--f:         'NHaasGroteskTX', sans-serif   /* body / UI font */
+--f-display: 'NHaasGroteskDS', sans-serif  /* large headings */
 ```
 
-To change the accent color site-wide, change `--acid` in style.css.
+To change accent color site-wide: edit `--acid` in style.css.
+
+---
+
+## Fonts
+
+Fonts are loaded locally from `_fonts/` — no Google Fonts dependency.
+
+| Variable | File | Used on |
+|----------|------|---------|
+| `--f` (400) | `NHaasGroteskTXPro-55Rg.otf` | All body text, nav, labels |
+| `--f` (700) | `NHaasGroteskTXPro-75Bd.otf` | Bold UI text |
+| `--f-display` | `NHaasGroteskDSPro-55Rg.otf` | Hero, section headings, glitch titles |
+
+To use `--f-display` on a new heading: `font-family: var(--f-display);`
+
+---
+
+## Image Workflow
+
+All images use WebP thumbnails for page load, originals for lightbox full-view.
+
+**Adding images for a new work page:**
+
+1. Save full-res original to `assets/images/works/[name].png` or `.jpg`
+2. Run the conversion script (or manually convert):
+   ```python
+   from PIL import Image
+   img = Image.open('original.png').convert('RGBA')
+   img = img.resize((1200, int(h * 1200 / w)), Image.LANCZOS)  # if w > 1200
+   img.save('assets/images/works/thumbs/name.webp', 'WEBP', quality=82)
+   ```
+3. In HTML use: `src="[../]assets/images/works/thumbs/name.webp" data-src-full="[../]assets/images/works/name.png"`
+4. Lightbox JS automatically uses `data-src-full` for full-res view
 
 ---
 
@@ -49,34 +86,38 @@ To change the accent color site-wide, change `--acid` in style.css.
 
 1. Copy any existing file from `clients/` (e.g. `clients/rich-music.html`)
 2. Update: page title, meta description, client name, description text
-3. Update work card images and links to point to relevant `works/` pages
-4. If client has a logo PNG: save it to `assets/images/clients/[slug].png` and reference it
-5. Add a new `<a href="clients/[slug].html" class="client-cell">` entry in `index.html` under `#clients`
+3. Add client logo WebP to `assets/images/clients/[slug].webp`
+4. Add a new `<a href="clients/[slug].html" class="client-logo-cell">` in `index.html` under `#clients`
+5. The clients grid is `repeat(4, 1fr)` — 8 cells fills 2 rows evenly (last cell is the CTA)
 
 ---
 
 ## How to Add a New Work/Project Page
 
 1. Copy any existing file from `works/` (e.g. `works/smoked-house.html`)
-2. Update: page title, meta description, back link href, hero image src, meta-row values, description, detail-grid images
-3. Update prev/next links in the new page AND in the pages it sits between
-4. Copy the relevant images from `_source-assets/` to `assets/images/works/` with a clean name
-5. Add a new `<a href="works/[slug].html" class="proj-card">` entry in the relevant category page
+2. Update: page title, meta, `.page-header` back links, hero image, meta-row, description, detail-grid
+3. Update prev/next `work-nav` links in the new page AND adjacent pages
+4. Add WebP thumb + original to `assets/images/works/` and `thumbs/` (see Image Workflow above)
+5. Add `<a href="works/[slug].html" class="proj-card">` to the relevant category page
 
 ---
 
-## How to Add a New Work Category
+## PDF Portfolio
 
-1. Create a new HTML file at root level (e.g. `branding.html`) — copy `logofolio.html` as template
-2. Update the category nav strip in ALL category pages to include the new link
-3. Update the "Work" link in ALL navs if needed
-4. Add entries to `index.html` nav if appropriate
+The PDF (700MB) is hosted on Google Drive — too large to serve locally.
+Button in `index.html` links to: `https://drive.google.com/file/d/1W74Sz7W2R5M_N06_PuA6Hgq8OUAG95_E/view`
+
+The original PDF file is in `_archive/` — do not rename or delete it.
 
 ---
 
-## How to Update the Profile Photo
+## Lightbox
 
-Replace `assets/images/profile.jpg` with a new photo. Recommended: portrait crop, at least 800×1000px.
+Managed in `assets/js/main.js`. Supports:
+- Click any `.detail-hero` or `.detail-grid img` to open
+- Keyboard: `←` `→` to navigate, `Esc` to close
+- Touch: swipe left/right to navigate (40px threshold)
+- Uses `data-src-full` attribute for full-res image; falls back to `src` if absent
 
 ---
 
@@ -90,17 +131,22 @@ When ready to scale:
 4. `assets/js/main.js` → `src/scripts/main.js`, loaded in layout `<script>`
 5. Nav + footer → `src/components/Nav.astro` + `src/components/Footer.astro`
 6. Work/client data → `src/data/works.json` + `src/data/clients.json`
-7. Images → `public/images/` OR use Astro's `<Image />` for optimization
-8. All CSS tokens stay identical — no visual changes
+7. Images → keep WebP thumbs in `public/images/works/thumbs/`, originals in `public/images/works/`
+8. Font `@font-face` → move to global CSS, paths update to `/fonts/`
+9. All CSS tokens stay identical — no visual changes needed
 
 ---
 
 ## Troubleshooting
 
-**Images not loading:** Check the path. Pages in `clients/` and `works/` subdirectories need `../assets/images/` (two dots). Root pages use `assets/images/`.
+**Images not loading:** Check the path prefix. Pages in `clients/` and `works/` need `../assets/`. Root pages use `assets/`.
 
-**Styles not applying:** Check the stylesheet link path. Root pages: `assets/css/style.css`. Subdirectory pages: `../assets/css/style.css`.
+**Font not loading:** Fonts load from `../../_fonts/` relative to `assets/css/style.css`. The `_fonts/` folder must stay at repo root.
 
-**Cursor not showing:** The custom cursor requires JS. If JS is disabled, the browser's default cursor is used. This is expected.
+**Styles not applying:** Stylesheet link — root pages: `assets/css/style.css`. Subdirectory pages: `../assets/css/style.css`.
 
-**Nav not switching color:** Sections that should trigger the nav to go dark need class `section-light` on them (e.g. `<section id="about" class="section-light">`).
+**Cursor not showing:** Custom cursor requires JS. Disabled on touch/mobile via `@media (max-width:600px)` — expected.
+
+**Nav not switching color:** Sections that should trigger dark nav need `class="section-light"` (e.g. `<section id="about" class="section-light">`).
+
+**Glitch heading wrapping:** `.glitch` uses `white-space: nowrap`. If text overflows on very small screens, reduce font-size via `clamp()` in the `@media (max-width:600px)` block in style.css.

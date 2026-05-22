@@ -113,7 +113,7 @@ if (nav) {
 
   function open(idx, dir) {
     current = (idx + imgs.length) % imgs.length;
-    lbImg.src = imgs[current].src;
+    lbImg.src = imgs[current].dataset.srcFull || imgs[current].src;
     lbImg.alt = imgs[current].alt;
     overlay.classList.add('open');
     document.body.style.overflow = 'hidden';
@@ -139,6 +139,15 @@ if (nav) {
     if (e.key === 'ArrowLeft')  open(current - 1, 'left');
     if (e.key === 'ArrowRight') open(current + 1, 'right');
   });
+
+  // Touch swipe
+  let touchStartX = 0;
+  overlay.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+  overlay.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(dx) < 40) return;
+    dx < 0 ? open(current + 1, 'right') : open(current - 1, 'left');
+  }, { passive: true });
 })();
 
 /* ── Active Nav Link ─────────────────────────────────────────── */
