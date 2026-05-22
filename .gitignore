@@ -4,3 +4,4 @@ _fonts/
 ECA-CV-INFO.md
 
 .vercel
+.env*.local
