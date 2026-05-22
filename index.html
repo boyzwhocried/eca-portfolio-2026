@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Annisa Raihan Djatmiko (ECA) — Graphic Designer & Illustrator based in Jakarta, Indonesia." />
-  <title>ECA — Annisa Raihan Djatmiko · Graphic Designer / Illustrator</title>
+  <meta name="description" content="Annisa Raihan Djatmiko (ECA), Graphic Designer &amp; Illustrator based in Jakarta, Indonesia." />
+  <title>ECA / Annisa Raihan Djatmiko · Graphic Designer / Illustrator</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -51,9 +51,30 @@
     .blob {
       position: absolute; border-radius: 50%; background: var(--acid);
       pointer-events: none; z-index: 0;
-      animation: float 6s ease-in-out infinite alternate;
     }
-    @keyframes float { from { transform:translateY(0) scale(1) } to { transform:translateY(-14px) scale(1.05) } }
+    .blob:nth-child(1) { animation: floatA 7s ease-in-out infinite alternate; }
+    .blob:nth-child(2) { animation: floatB 9s ease-in-out infinite alternate; }
+    .blob:nth-child(3) { animation: floatC 11s ease-in-out infinite alternate; }
+    .blob:nth-child(4) { animation: floatA 8s ease-in-out infinite alternate-reverse; }
+    .blob:nth-child(5) { animation: floatB 10s ease-in-out infinite alternate-reverse; }
+    @keyframes floatA {
+      0%   { transform: translate(0,0) scale(1); }
+      33%  { transform: translate(8px,-10px) scale(1.04); }
+      66%  { transform: translate(-6px,-16px) scale(1.02); }
+      100% { transform: translate(4px,-12px) scale(1.06); }
+    }
+    @keyframes floatB {
+      0%   { transform: translate(0,0) scale(1); }
+      40%  { transform: translate(-10px,-8px) scale(1.05); }
+      70%  { transform: translate(6px,-14px) scale(1.02); }
+      100% { transform: translate(-4px,-10px) scale(1.04); }
+    }
+    @keyframes floatC {
+      0%   { transform: translate(0,0) scale(1); }
+      30%  { transform: translate(12px,-6px) scale(1.03); }
+      60%  { transform: translate(-8px,-12px) scale(1.06); }
+      100% { transform: translate(6px,-8px) scale(1.04); }
+    }
     .about-text { position: relative; z-index: 1; }
     .about-label { font-size: .7rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; opacity: .4; margin-bottom: 1.5rem; }
     .about-name  { font-size: clamp(2.2rem,4vw,3.5rem); font-weight: 700; line-height: 1; margin-bottom: 2rem; }
@@ -63,16 +84,23 @@
     .about-photo-blob {
       position: absolute; width: 88%; padding-bottom: 90%;
       background: var(--acid); border-radius: 60% 40% 55% 45% / 50% 60% 40% 55%;
-      animation: morphBlob 8s ease-in-out infinite alternate; z-index: 0;
+      animation: morphBlob 8s ease-in-out infinite alternate, blobDrift 12s ease-in-out infinite alternate;
+      z-index: 0;
     }
     @keyframes morphBlob {
       from { border-radius: 60% 40% 55% 45% / 50% 60% 40% 55% }
       to   { border-radius: 40% 60% 45% 55% / 60% 45% 55% 40% }
     }
+    @keyframes blobDrift {
+      0%   { transform: translate(0,0); }
+      25%  { transform: translate(10px,-8px); }
+      50%  { transform: translate(-6px,-14px); }
+      75%  { transform: translate(8px,-6px); }
+      100% { transform: translate(-4px,-10px); }
+    }
     .about-img {
-      position: relative; z-index: 1; width: 75%; border-radius: 4px;
-      aspect-ratio: 3/4; object-fit: cover; object-position: top;
-      mix-blend-mode: multiply;
+      position: relative; z-index: 2; width: 80%;
+      object-fit: contain;
     }
 
     /* CLIENTS */
@@ -134,16 +162,37 @@
       height: 64px; display: flex; flex-direction: column;
       align-items: center; justify-content: center; gap: .2rem; width: 100%;
     }
-    .cl-logo img { max-height: 52px; width: auto; max-width: 140px; object-fit: contain; filter: brightness(0) invert(1); opacity: .85; transition: opacity .2s; }
-    .client-logo-cell:hover .cl-logo img { opacity: 1; }
+    .cl-logo img {
+      max-height: 52px; width: auto; max-width: 140px; object-fit: contain;
+      filter: brightness(0) invert(1); opacity: .7;
+      transition: opacity .2s, filter .2s;
+    }
+    .client-logo-cell:hover .cl-logo img { opacity: 1; filter: none; }
 
     @media (max-width: 900px) {
-      #about { grid-template-columns: 1fr; }
-      #cv    { grid-template-columns: 1fr; }
+      #about { grid-template-columns: 1fr; gap: 3rem; padding: 6rem var(--pad-x-sm) 5rem; }
+      #cv    { grid-template-columns: 1fr; padding: 5rem var(--pad-x-sm); gap: 2.5rem; }
       .contact-links { gap: 2rem; }
       .clients-logo-grid { grid-template-columns: repeat(2, 1fr); }
+      #clients { padding: 4rem var(--pad-x-sm); }
+      #contact { padding: 6rem var(--pad-x-sm) 4rem; }
     }
-    @media (max-width: 480px) {
+    @media (max-width: 600px) {
+      #hero { padding: 2rem var(--pad-x-sm); }
+      .hero-badge { top: 4.5rem; right: var(--pad-x-sm); }
+      .hero-badge .line { font-size: 1rem; }
+      .hero-foot { flex-direction: column; align-items: flex-start; gap: 1rem; }
+      #about { padding: 5rem var(--pad-x-sm) 4rem; }
+      .about-right { width: 100%; }
+      .about-img { width: 65%; margin: 0 auto; }
+      #cv { padding: 4rem var(--pad-x-sm); }
+      .cv-title { font-size: 2.2rem; }
+      #contact { padding: 5rem var(--pad-x-sm) 3rem; }
+      .contact-head { font-size: clamp(2.2rem, 9vw, 4rem); margin-bottom: 2.5rem; }
+      .contact-links { flex-direction: column; gap: 1.5rem; }
+      #clients { padding: 3rem var(--pad-x-sm); }
+    }
+    @media (max-width: 380px) {
       .clients-logo-grid { grid-template-columns: 1fr; }
     }
   </style>
@@ -212,7 +261,7 @@
     <p class="about-label reveal">Graphic Designer / Illustrator</p>
     <h2 class="about-name reveal delay-1">Hello,<br>it's Eca.</h2>
     <div class="about-body reveal delay-2">
-      <p>I'm a Graphic Designer &amp; Illustrator based in Jakarta, Indonesia, with 3 years of experience in digital content and illustration — focused on creating visuals that connect with audiences and elevate ideas.</p>
+      <p>I'm a Graphic Designer &amp; Illustrator based in Jakarta, Indonesia, with 3 years of experience in digital content and illustration, focused on creating visuals that connect with audiences and elevate ideas.</p>
       <p>I graduated from Telkom University in 2024 with a Bachelor's in Visual Communication Design, Graphic Design Major (GPA 3.71).</p>
       <p>I'm always open to learning new things and expanding my skill set, whether exploring new styles, tools, or creative approaches.</p>
     </div>
@@ -220,7 +269,7 @@
 
   <div class="about-right reveal delay-3">
     <div class="about-photo-blob"></div>
-    <img class="about-img" src="assets/images/profile.jpg" alt="Annisa Raihan Djatmiko — ECA" />
+    <img class="about-img" src="assets/images/profile.png" alt="Annisa Raihan Djatmiko / ECA" />
   </div>
 </section>
 
@@ -272,23 +321,23 @@
     <p class="cv-sec-head">Work Experience</p>
     <div class="cv-entry">
       <div class="ce-top"><span class="ce-company">PT Sumber Anggur Sejahtera</span><span class="ce-period">Nov '24 – Present</span></div>
-      <div class="ce-role">Graphic Designer — Staff</div>
+      <div class="ce-role">Graphic Designer, Staff</div>
     </div>
     <div class="cv-entry">
       <div class="ce-top"><span class="ce-company">PRAVIA</span><span class="ce-period">Jan '26 – Present</span></div>
-      <div class="ce-role">Graphic Designer — Freelance</div>
+      <div class="ce-role">Graphic Designer, Freelance</div>
     </div>
     <div class="cv-entry">
       <div class="ce-top"><span class="ce-company">Makmur Bahagia Kemang</span><span class="ce-period">May '25 – Feb '26</span></div>
-      <div class="ce-role">Graphic Designer — Staff</div>
+      <div class="ce-role">Graphic Designer, Staff</div>
     </div>
     <div class="cv-entry">
       <div class="ce-top"><span class="ce-company">Rich Music Online</span><span class="ce-period">Jul '22 – Oct '24</span></div>
-      <div class="ce-role">Graphic Designer &amp; Social Media — Lead</div>
+      <div class="ce-role">Graphic Designer &amp; Social Media, Lead</div>
     </div>
     <div class="cv-entry">
       <div class="ce-top"><span class="ce-company">HAI Teman</span><span class="ce-period">Apr '22 – Jul '22</span></div>
-      <div class="ce-role">Graphic Designer — Internship</div>
+      <div class="ce-role">Graphic Designer, Internship</div>
     </div>
     <p class="cv-sec-head">Education</p>
     <div class="cv-entry">
