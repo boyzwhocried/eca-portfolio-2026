@@ -71,8 +71,8 @@
     }
     .about-img {
       position: relative; z-index: 1; width: 75%; border-radius: 4px;
-      box-shadow: 0 32px 64px rgba(0,0,0,.18);
       aspect-ratio: 3/4; object-fit: cover; object-position: top;
+      mix-blend-mode: multiply;
     }
 
     /* CLIENTS */
@@ -136,18 +136,6 @@
     }
     .cl-logo img { max-height: 52px; width: auto; max-width: 140px; object-fit: contain; filter: brightness(0) invert(1); opacity: .85; transition: opacity .2s; }
     .client-logo-cell:hover .cl-logo img { opacity: 1; }
-    .cl-wordmark { font-weight: 700; letter-spacing: .06em; line-height: 1; }
-    .cl-sub { font-size: .55rem; letter-spacing: .12em; opacity: .5; text-transform: uppercase; }
-    .cl-icon { font-size: 1.2rem; line-height: 1; }
-    .cl-suntory .cl-wordmark { font-size: 1.25rem; color: #4dbfff; letter-spacing: .08em; }
-    .cl-suntory .cl-sub      { color: #4dbfff; opacity: .7; }
-    .cl-amber .cl-icon       { color: #e8732a; font-size: 1rem; }
-    .cl-amber .cl-wordmark   { font-size: 1.2rem; color: var(--white); }
-    .cl-amber .cl-sub        { color: #e8732a; opacity: .8; }
-    .cl-pernod .cl-wordmark  { font-size: 1.1rem; color: #6db4d8; font-weight: 600; letter-spacing: .03em; }
-    .cl-sazerac .cl-wordmark { font-size: 1.2rem; color: #c9a96e; letter-spacing: .1em; font-weight: 700; }
-    .cl-makmur .cl-wordmark  { font-size: 1rem; color: var(--white); line-height: 1.15; }
-    .cl-makmur .cl-sub       { font-size: .5rem; }
 
     @media (max-width: 900px) {
       #about { grid-template-columns: 1fr; }
@@ -183,7 +171,7 @@
     <span class="line">2025–2026</span><br>
     <span class="line">Selected Works</span>
   </div>
-  <h1 class="hero-headline">Curriculum Vitae/<br>Currated Works</h1>
+  <h1 class="hero-headline">Curriculum Vitae/<br>Curated Works</h1>
   <div class="hero-foot">
     <div class="hero-contact">
       <a href="https://wa.me/6281372076434">+62-813-7207-6434</a><br>
@@ -241,37 +229,23 @@
   <p class="sec-label reveal">Selected Clients &amp; Collaboration</p>
   <div class="clients-logo-grid reveal delay-1">
     <a href="clients/suntory.html" class="client-logo-cell">
-      <div class="cl-logo cl-suntory">
-        <span class="cl-wordmark">SUNTORY</span>
-        <span class="cl-sub">GLOBAL SPIRITS</span>
-      </div>
+      <div class="cl-logo"><img src="assets/images/clients/suntory.png" alt="Suntory Global Spirits" /></div>
       <span class="c-scope">Social Media · Print Design</span>
     </a>
     <a href="clients/amber.html" class="client-logo-cell">
-      <div class="cl-logo cl-amber">
-        <span class="cl-icon">◈</span>
-        <span class="cl-wordmark">AMB<span style="letter-spacing:-.04em">E</span>R</span>
-        <span class="cl-sub">BEVERAGE GROUP</span>
-      </div>
+      <div class="cl-logo"><img src="assets/images/clients/amber.png" alt="Amber Beverage Group" /></div>
       <span class="c-scope">Social Media · Print Design</span>
     </a>
     <a href="clients/pernod-ricard.html" class="client-logo-cell">
-      <div class="cl-logo cl-pernod">
-        <span class="cl-wordmark">Pernod Ricard</span>
-      </div>
+      <div class="cl-logo"><img src="assets/images/clients/pernod-ricard.png" alt="Pernod Ricard" /></div>
       <span class="c-scope">Social Media · Print Design</span>
     </a>
     <a href="clients/sazerac.html" class="client-logo-cell">
-      <div class="cl-logo cl-sazerac">
-        <span class="cl-wordmark">SAZERAC</span>
-      </div>
+      <div class="cl-logo"><img src="assets/images/clients/sazerac.png" alt="Sazerac" /></div>
       <span class="c-scope">Social Media · Print Design</span>
     </a>
     <a href="clients/makmur-bahagia.html" class="client-logo-cell">
-      <div class="cl-logo cl-makmur">
-        <span class="cl-wordmark">MAKMUR<br>BAHAGIA</span>
-        <span class="cl-sub">CREATIVE SPACE &amp; BAR</span>
-      </div>
+      <div class="cl-logo"><img src="assets/images/clients/makmur-bahagia.png" alt="Makmur Bahagia" /></div>
       <span class="c-scope">Layout · Social Media</span>
     </a>
     <a href="clients/rich-music.html" class="client-logo-cell">
@@ -328,7 +302,7 @@
       <span class="skill-pill">Photoshop</span>
       <span class="skill-pill">Illustrator</span>
       <span class="skill-pill">Premiere Pro</span>
-      <span class="skill-pill">After Effects</span>
+      <span class="skill-pill">After Effect</span>
       <span class="skill-pill">Procreate</span>
       <span class="skill-pill">Figma</span>
     </div>
