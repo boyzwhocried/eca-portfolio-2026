@@ -1,0 +1,15 @@
+# Large source/archive directories — not needed for deployment
+_source-assets/
+_archive/
+_fonts/
+_ref/
+
+# Original work images replaced by WebP equivalents
+assets/images/works/*.png
+assets/images/works/*.jpg
+assets/images/works/*.jpeg
+
+# Dev/docs
+CLAUDE.md
+ECA-CV-INFO.md
+docs/
