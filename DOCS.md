@@ -41,8 +41,8 @@ All tokens in `assets/css/style.css` under `:root`:
 --white:     #ffffff
 --acid:      #ccff00   /* lime green accent */
 --acid2:     #b8e800   /* lime hover */
---f:         'NHaasGroteskTX', sans-serif   /* body / UI font */
---f-display: 'NHaasGroteskDS', sans-serif  /* large headings */
+--f:         'Plus Jakarta Sans', sans-serif   /* body / UI font */
+--f-display: 'Plus Jakarta Sans', sans-serif  /* large headings (700 weight) */
 ```
 
 To change accent color site-wide: edit `--acid` in style.css.
@@ -51,15 +51,24 @@ To change accent color site-wide: edit `--acid` in style.css.
 
 ## Fonts
 
-Fonts are loaded locally from `_fonts/` — no Google Fonts dependency.
+Loaded from Google Fonts — **Plus Jakarta Sans** (weights 300–700 + italic 400).
 
-| Variable | File | Used on |
-|----------|------|---------|
-| `--f` (400) | `NHaasGroteskTXPro-55Rg.otf` | All body text, nav, labels |
-| `--f` (700) | `NHaasGroteskTXPro-75Bd.otf` | Bold UI text |
-| `--f-display` | `NHaasGroteskDSPro-55Rg.otf` | Hero, section headings, glitch titles |
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" />
+```
 
-To use `--f-display` on a new heading: `font-family: var(--f-display);`
+| Variable | Family | Used on |
+|----------|--------|---------|
+| `--f` | `'Plus Jakarta Sans'` | All body text, nav, labels |
+| `--f-display` | `'Plus Jakarta Sans'` | Hero, section headings, glitch titles |
+
+Both variables point to the same family. Display headings are distinguished by `font-weight: 700` and larger size, not a separate typeface.
+
+To use `--f-display` on a new heading: `font-family: var(--f-display); font-weight: 700;`
+
+> Note: `_fonts/` still contains the original NHaasGrotesk OTF files — kept for reference, not loaded.
 
 ---
 
