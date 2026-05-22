@@ -83,13 +83,14 @@
       background: var(--white); color: var(--dark);
       padding: 8rem var(--pad-x); display: grid;
       grid-template-columns: 260px 1fr 220px; gap: 4rem;
+      align-items: start;
     }
     .cv-title { font-size: clamp(2.5rem,4vw,4rem); font-weight: 700; line-height: 1; }
     .cv-sec-head {
       font-size: .66rem; font-weight: 700; letter-spacing: .14em;
       text-transform: uppercase; opacity: .4; margin-bottom: 1.8rem; margin-top: 2.5rem;
     }
-    .cv-sec-head:first-child { margin-top: 0; }
+    .cv-sec-head:first-child { margin-top: 0; padding-top: 9rem; }
     .cv-entry { padding: 1.2rem 0; border-bottom: 1px solid rgba(0,0,0,.08); }
     .cv-entry:last-child { border-bottom: none; }
     .ce-top { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
@@ -114,10 +115,48 @@
     .cl a { font-size: .95rem; font-weight: 500; transition: color .2s; }
     .cl a:hover { color: var(--acid); }
 
+    /* CLIENTS LOGO GRID */
+    .clients-logo-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      border: 1px solid rgba(255,255,255,.06);
+    }
+    .client-logo-cell {
+      padding: 2.5rem 1.8rem 2rem;
+      border: 1px solid rgba(255,255,255,.06);
+      display: flex; flex-direction: column; align-items: center; gap: 1rem;
+      transition: background .25s; cursor: none; text-align: center;
+    }
+    .client-logo-cell:hover { background: rgba(204,255,0,.05); }
+    .client-logo-cell .c-scope { font-size: .68rem; opacity: .35; letter-spacing: .04em; }
+    .cl-logo {
+      height: 64px; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: .2rem; width: 100%;
+    }
+    .cl-logo img { max-height: 52px; width: auto; max-width: 140px; object-fit: contain; filter: brightness(0) invert(1); opacity: .85; transition: opacity .2s; }
+    .client-logo-cell:hover .cl-logo img { opacity: 1; }
+    .cl-wordmark { font-weight: 700; letter-spacing: .06em; line-height: 1; }
+    .cl-sub { font-size: .55rem; letter-spacing: .12em; opacity: .5; text-transform: uppercase; }
+    .cl-icon { font-size: 1.2rem; line-height: 1; }
+    .cl-suntory .cl-wordmark { font-size: 1.25rem; color: #4dbfff; letter-spacing: .08em; }
+    .cl-suntory .cl-sub      { color: #4dbfff; opacity: .7; }
+    .cl-amber .cl-icon       { color: #e8732a; font-size: 1rem; }
+    .cl-amber .cl-wordmark   { font-size: 1.2rem; color: var(--white); }
+    .cl-amber .cl-sub        { color: #e8732a; opacity: .8; }
+    .cl-pernod .cl-wordmark  { font-size: 1.1rem; color: #6db4d8; font-weight: 600; letter-spacing: .03em; }
+    .cl-sazerac .cl-wordmark { font-size: 1.2rem; color: #c9a96e; letter-spacing: .1em; font-weight: 700; }
+    .cl-makmur .cl-wordmark  { font-size: 1rem; color: var(--white); line-height: 1.15; }
+    .cl-makmur .cl-sub       { font-size: .5rem; }
+
     @media (max-width: 900px) {
       #about { grid-template-columns: 1fr; }
       #cv    { grid-template-columns: 1fr; }
       .contact-links { gap: 2rem; }
+      .clients-logo-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .clients-logo-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -144,7 +183,7 @@
     <span class="line">2025–2026</span><br>
     <span class="line">Selected Works</span>
   </div>
-  <h1 class="hero-headline">Curriculum<br>Vitae/<br>Curated<br>Works</h1>
+  <h1 class="hero-headline">Curriculum Vitae/<br>Currated Works</h1>
   <div class="hero-foot">
     <div class="hero-contact">
       <a href="https://wa.me/6281372076434">+62-813-7207-6434</a><br>
@@ -183,7 +222,7 @@
 
   <div class="about-text">
     <p class="about-label reveal">Graphic Designer / Illustrator</p>
-    <h2 class="about-name reveal delay-1">Hello,<br>it's ECA.</h2>
+    <h2 class="about-name reveal delay-1">Hello,<br>it's Eca.</h2>
     <div class="about-body reveal delay-2">
       <p>I'm a Graphic Designer &amp; Illustrator based in Jakarta, Indonesia, with 3 years of experience in digital content and illustration — focused on creating visuals that connect with audiences and elevate ideas.</p>
       <p>I graduated from Telkom University in 2024 with a Bachelor's in Visual Communication Design, Graphic Design Major (GPA 3.71).</p>
@@ -199,34 +238,52 @@
 
 <!-- ── CLIENTS ────────────────────────────────────────────────── -->
 <section id="clients">
-  <p class="sec-label reveal">Selected Clients &amp; Collaborations</p>
-  <div class="clients-grid reveal delay-1">
-    <a href="clients/suntory.html" class="client-cell">
-      <span class="c-name">SUNTORY GLOBAL SPIRITS</span>
+  <p class="sec-label reveal">Selected Clients &amp; Collaboration</p>
+  <div class="clients-logo-grid reveal delay-1">
+    <a href="clients/suntory.html" class="client-logo-cell">
+      <div class="cl-logo cl-suntory">
+        <span class="cl-wordmark">SUNTORY</span>
+        <span class="cl-sub">GLOBAL SPIRITS</span>
+      </div>
       <span class="c-scope">Social Media · Print Design</span>
     </a>
-    <a href="clients/amber.html" class="client-cell">
-      <span class="c-name">AMBER BEVERAGE GROUP</span>
+    <a href="clients/amber.html" class="client-logo-cell">
+      <div class="cl-logo cl-amber">
+        <span class="cl-icon">◈</span>
+        <span class="cl-wordmark">AMB<span style="letter-spacing:-.04em">E</span>R</span>
+        <span class="cl-sub">BEVERAGE GROUP</span>
+      </div>
       <span class="c-scope">Social Media · Print Design</span>
     </a>
-    <a href="clients/pernod-ricard.html" class="client-cell">
-      <span class="c-name">PERNOD RICARD</span>
+    <a href="clients/pernod-ricard.html" class="client-logo-cell">
+      <div class="cl-logo cl-pernod">
+        <span class="cl-wordmark">Pernod Ricard</span>
+      </div>
       <span class="c-scope">Social Media · Print Design</span>
     </a>
-    <a href="clients/sazerac.html" class="client-cell">
-      <span class="c-name">SAZERAC</span>
+    <a href="clients/sazerac.html" class="client-logo-cell">
+      <div class="cl-logo cl-sazerac">
+        <span class="cl-wordmark">SAZERAC</span>
+      </div>
       <span class="c-scope">Social Media · Print Design</span>
     </a>
-    <a href="clients/makmur-bahagia.html" class="client-cell">
-      <span class="c-name">MAKMUR BAHAGIA</span>
-      <span class="c-scope">Brand Identity · Print Design</span>
+    <a href="clients/makmur-bahagia.html" class="client-logo-cell">
+      <div class="cl-logo cl-makmur">
+        <span class="cl-wordmark">MAKMUR<br>BAHAGIA</span>
+        <span class="cl-sub">CREATIVE SPACE &amp; BAR</span>
+      </div>
+      <span class="c-scope">Layout · Social Media</span>
     </a>
-    <a href="clients/rich-music.html" class="client-cell">
-      <span class="c-name">RICH MUSIC ONLINE</span>
+    <a href="clients/rich-music.html" class="client-logo-cell">
+      <div class="cl-logo cl-rich">
+        <img src="assets/images/clients/rich-music.png" alt="Rich Music Online" />
+      </div>
       <span class="c-scope">Social Media · Layout Design</span>
     </a>
-    <a href="clients/distorsi-keras.html" class="client-cell">
-      <span class="c-name">DISTORSI KERAS</span>
+    <a href="clients/distorsi-keras.html" class="client-logo-cell">
+      <div class="cl-logo cl-distorsi">
+        <img src="assets/images/clients/distorsi-keras.png" alt="DistorsiKERAS" />
+      </div>
       <span class="c-scope">Social Media · Event Design</span>
     </a>
   </div>
@@ -304,6 +361,11 @@
       <span class="lbl">Based in</span>
       <span style="font-size:.95rem;font-weight:500">Jakarta, Indonesia</span>
     </div>
+  </div>
+  <div class="reveal delay-3" style="margin-top:3rem">
+    <a class="acid-btn" href="_archive/Portfolio 2026 - Annisa Raihan Djatmiko.pdf" download>
+      ↓ Download Portfolio PDF
+    </a>
   </div>
 </section>
 
