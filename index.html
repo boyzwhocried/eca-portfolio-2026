@@ -24,11 +24,23 @@
       animation: badgeDrop .8s cubic-bezier(.22,1,.36,1) .4s both;
     }
     @keyframes badgeDrop { from { opacity:0; transform:translateY(-16px) } to { opacity:1; transform:none } }
+    /* Acid stabilo highlight — same marker style as the work-page .glitch headings */
     .hero-badge .line {
-      display: inline-block; background: var(--acid); color: var(--dark);
+      display: inline-block; position: relative; isolation: isolate;
+      color: var(--dark);
       font-size: clamp(1.1rem,2.2vw,1.8rem); font-weight: 700;
-      padding: .18em .4em; line-height: 1.1;
+      padding: .08em .24em; line-height: 1.1;
     }
+    .hero-badge .line::after {
+      content: '';
+      position: absolute; z-index: -1;
+      left: 0; right: 0; top: .02em; bottom: -.04em;
+      background: var(--acid);
+      transform: scaleX(0); transform-origin: left center;
+      animation: markSweep .55s cubic-bezier(.22,1,.36,1) .5s both;
+    }
+    .hero-badge .line:nth-of-type(2)::after { animation-delay: .72s; }
+    @keyframes markSweep { to { transform: scaleX(1) } }
     .hero-badge .line + .line { margin-top: 3px; }
     .hero-headline {
       font-size: clamp(3.5rem, 9.5vw, 10rem);

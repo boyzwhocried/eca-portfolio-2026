@@ -109,21 +109,26 @@ main { animation: pageFade .5s ease both; }
   text-transform: uppercase; opacity: .35; margin-bottom: 3.5rem;
 }
 
-/* ── GLITCH HEADING ──────────────────────────────────────────── */
+/* ── GLITCH HEADING (acid stabilo highlight) ─────────────────── */
 .glitch {
   display: inline-block; position: relative;
+  isolation: isolate;                /* stable stacking context so the band stays put after reveal */
   font-size: clamp(2rem, 6vw, 8rem); font-weight: 700;
-  line-height: 1; color: var(--white);
+  line-height: 1; color: var(--dark);
   white-space: nowrap;
   font-family: var(--f-display);
 }
+/* Acid marker band: sweeps left→right behind the text on reveal, then stays highlighted */
 .glitch::after {
-  content: attr(data-g);
-  position: absolute; left: .28em; top: .1em;
-  background: var(--acid); color: var(--dark);
-  padding: .03em .14em; line-height: 1;
-  z-index: -1; font-weight: 700; font-size: 1em;
+  content: '';
+  position: absolute; z-index: -1;
+  left: -.08em; right: -.08em; top: .04em; bottom: -.1em;
+  background: var(--acid);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform .55s cubic-bezier(.22,1,.36,1) .25s;
 }
+.glitch.in::after { transform: scaleX(1); }
 
 /* ── WORK SECTION DIVIDER ────────────────────────────────────── */
 .work-divider {
